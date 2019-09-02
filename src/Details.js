@@ -27,6 +27,7 @@ class Details extends React.Component {
   }
   toggleModal = () => this.setState({ showModal: !this.state.showModal });
   adopt = () => navigate(this.state.url);
+  
   render() {
     if (this.state.loading) {
       return <h1>loading … </h1>;
